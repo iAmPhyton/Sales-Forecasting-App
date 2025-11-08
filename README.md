@@ -23,6 +23,15 @@ Tech Stack:
 Install Dependencies:
 - pip install -r requirements.txt
 
+project structure:
+- train.csv: #dataset
+- trains.py: #model training script (Prophet + ARIMA)
+- streamlit_app.py: #streamlit web app
+- prophet_model.pkl: #saved Prophet model
+- arima_model.pkl: #saved ARIMA model
+- requirements.txt: #dependencies list
+- README.md: #documentation
+
 Run the Streamlit App:
 - streamlit run appname.py (this automatically opens your already created streamlit app)
 - Then open the local URL (usually http://localhost:8501/) to view the dashboard.

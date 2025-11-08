@@ -33,19 +33,18 @@ project structure:
 - README.md: documentation
 
 Run the Streamlit App:
-- streamlit run appname.py (this automatically opens your already created streamlit app)
-- Then open the local URL (usually http://localhost:8501/) to view the dashboard.
+- streamlit run streamlit_trains.py (this automatically opens (usually http://localhost:8501/) your already created streamlit app)
 
 How It Works:
 - Data Preparation:
 - Loads daily sales data (train.csv)
 - Aggregates by store and product family
 - Renames columns for Prophet (ds, y)
-- Model Training (trains.py):
+- Model Training
 - Trains Prophet and ARIMA models
 - Saves models as .pkl files using joblib
 
-App Features (appname.py):
+App Features (streamlit_trains.py):
 - Users select forecast horizon (30–180 days)
 - Toggle between Prophet, ARIMA, or Comparison
 - Displays plots and metrics (RMSE, MAPE)

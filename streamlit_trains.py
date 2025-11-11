@@ -9,6 +9,8 @@ import statsmodels.api as sm
 import plotly.graph_objects as go
 from sklearn.metrics import mean_squared_error, mean_absolute_percentage_error
 
+model_choice = st.selectbox("Choose a forecasting model:", ["Prophet", "ARIMA", "SARIMA", "XGBoost", "Hybrid"]) 
+
 #utility Functions
 @st.cache_resource
 def load_models():
@@ -136,10 +138,20 @@ else:
         st.metric("ARIMA RMSE", f"{arima_rmse:,.2f}")
         st.metric("ARIMA MAPE", f"{arima_mape:.2f}%")
 
-    # Download comparison
+    #downloading comparison
     st.download_button(
         label="Download Comparison (CSV)",
         data=comparison_trains.to_csv(index=False).encode('utf-8'),
         file_name='model_comparison.csv',
         mime='text/csv'
     ) 
+    
+model_files = {
+    "Prophet": "prophet_model.pkl",
+    "ARIMA": "arima_model.pkl",
+    "SARIMA": "sarima_model.pkl",
+    "XGBoost": "xgb_model.pkl",
+    "Hybrid": "prophet_hybrid.pkl"
+}
+
+model = joblib.load(model_files[model_choice]) 

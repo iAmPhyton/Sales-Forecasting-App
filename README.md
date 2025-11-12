@@ -29,9 +29,9 @@ Features:
 - Production Ready: Cache-friendly and fully deployable on Streamlit Cloud or Hugging Face Spaces
 
 Models Used:
-- Prophet	prophet	Handles seasonality, trends, and holidays for robust forecasting.
-- ARIMA	statsmodels	Classical time-series model for autoregression and moving averages.
-- Auto ARIMA	pmdarima	Automatically finds the best ARIMA parameters (p, d, q, P, D, Q).
+- Prophet:	Handles seasonality, trends, and holidays for robust forecasting.
+- ARIMA	statsmodels	Classical time-series model: for autoregression and moving averages.
+- Auto ARIMA	pmdarima:	Automatically finds the best ARIMA parameters (p, d, q, P, D, Q).
 
 Evaluation Metrics:
 - MSE (Mean Squared Error):	Measures average squared difference between predicted and actual values.

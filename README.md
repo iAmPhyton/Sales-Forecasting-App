@@ -6,17 +6,17 @@ Project Overview:
 - It includes features for interactive forecasting, model comparison, and metric evaluation (MSE, RMSE, R²).
 
 Project Structure:
-- train.csv                     # Dataset
-- prophet_model.pkl             # Saved Prophet model
-- arima_model.pkl               # Saved ARIMA model
-- arima_best.pkl                # Saved Auto ARIMA model (tuned)
-- trains.py                     # Streamlit application file
-- requirements.txt              # Project dependencies
-- README.md                     # Project documentation
-- streamlit_train1.py              # Sales Forecasting Dashboard
-- streamlit_trains_comparison.py   # Streamlit app: Prophet, ARIMA & Auto ARIMA + Comparison Dashboard
-- streamlit_trains_metrics.py     # Streamlit App — Prophet, ARIMA & Auto ARIMA + Metrics Dashboard
-- streamlit_trains.py           # Streamlit app with Prophet, ARIMA & Auto ARIMA
+- train.csv:                    Dataset
+- prophet_model.pkl:           Saved Prophet model
+- arima_model.pkl:           Saved ARIMA model
+- arima_best.pkl:            Saved Auto ARIMA model (tuned)
+- trains.py:                     Streamlit application file
+- requirements.txt:            Project dependencies
+- README.md:                     Project documentation
+- streamlit_train1.py:              Sales Forecasting Dashboard
+- streamlit_trains_comparison.py:   Streamlit app: Prophet, ARIMA & Auto ARIMA + Comparison Dashboard
+- streamlit_trains_metrics.py:    Streamlit App — Prophet, ARIMA & Auto ARIMA + Metrics Dashboard
+- streamlit_trains.py:         Streamlit app with Prophet, ARIMA & Auto ARIMA
 
 Features:
 - Multi-model Forecasting: Choose between Prophet, ARIMA, or Auto ARIMA
